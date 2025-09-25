@@ -3,7 +3,15 @@ body {
   --mat-progress-bar-active-indicator-height: 8px;
 
   &.pink {
-    --main-bg: #9baba6;
+    --main-bg: #838f8b;
     --secondary-bg: #fddcdd;
+    --main-text: #444d48;
+    --contrast-text: #fdf3f4;
+    --main-opacity: rgba(0, 0, 0, 0.4);
   }
+
+  //Mat vars
+  --mat-icon-button-icon-color: var(--main-text);
+  --mat-menu-item-label-text-color: var(--main-text);
+  --mat-menu-container-color: var(--secondary-bg);
 }

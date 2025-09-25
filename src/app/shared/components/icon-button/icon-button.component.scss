@@ -1,0 +1,14 @@
+.icon-button {
+  --mat-icon-button-state-layer-size: var(--icon-button-size);
+  --mat-icon-button-icon-size: calc(var(--icon-button-size, 36px) * 0.6);
+  --mat-icon-button-touch-target-size: var(--mat-icon-button-state-layer-size);
+
+  mat-icon {
+    font-size: var(--mat-icon-button-icon-size);
+    height: var(--mat-icon-button-icon-size);
+    width: var(--mat-icon-button-icon-size);
+    min-height: var(--mat-icon-button-icon-size);
+    min-width: var(--mat-icon-button-icon-size);
+    overflow: visible;
+  }
+}

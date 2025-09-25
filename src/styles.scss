@@ -1,5 +1,6 @@
 @use "styles/reset";
 @use "styles/vars";
+@use "styles/mat-override";
 @use "sass:map";
 // Include theming for Angular Material with `mat.theme()`.
 // This Sass mixin will define CSS variables that are used for styling Angular Material
@@ -123,7 +124,6 @@ body.pink {
     (
       color: (
         primary: $pink-app-palette,
-        tertiary: mat.$blue-palette,
       ),
       typography: Roboto,
       density: 0,

@@ -1,6 +1,33 @@
 <div class="header">
-  <div>
-    <div class="header--title">Glitch Board</div>
+  <div class="header--title">
+    <div class="glitch-wrapper">
+      <div class="glitch" data-glitch="Glitch Board">Glitch Board</div>
+    </div>
   </div>
-  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  <div>
+    <app-icon-button
+      [matMenuTriggerFor]="profileMenu"
+      icon="face_2"
+      [size]="40"
+    ></app-icon-button>
+  </div>
+  @if (loading()) {
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  }
 </div>
+
+<mat-menu #profileMenu="matMenu">
+  <button [matMenuTriggerFor]="themes" mat-menu-item>
+    <mat-icon>palette</mat-icon>
+    <span>Theme</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>logout</mat-icon>
+    <span>Log Out</span>
+  </button>
+</mat-menu>
+
+<mat-menu #themes="matMenu">
+  <button mat-menu-item>Pink Light</button>
+  <button mat-menu-item>Purple</button>
+</mat-menu>
